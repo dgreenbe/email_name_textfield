@@ -1,4 +1,4 @@
-class ctct.EmailInputAreaView extends Backbone.View
+class @EmailNameTextField.EmailInputAreaView extends Backbone.View
   IP_LOOK_ALIKE: "[^@]+@(\\d+\\.)+\\d+$"
   EMAIL_PATTERN:  "[\\w!#$%&'*+/=?^`{|}~-]+(?:\\.[\\w!#$%&'*+/=?^`{|}~-]+)*@(?:[\\w](?:[\\w-]*[\\w])?\\.)+[\\w](?:[\\w-]*[\\w])"
   NAME_PATTERN: "([\\w\\xC0-\\xFF'.-]+)(\\s*,)?([\\s,\\w\\xC0-\\xFF'.-]*)"
