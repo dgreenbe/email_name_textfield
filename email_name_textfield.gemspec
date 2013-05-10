@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = EmailNameTextfield::Rails::VERSION
   spec.authors       = ["Dana Greenberg"]
   spec.email         = ["dgreenbe@constantcontact.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = "Text area for pasting in multiple emails and validating by name and e-mail address"
+  spec.summary       = "Text area entry tool that allows you to paste e-mail names and addresses from common mail clients such as Gmail, Yahoo! and Outlook. This tool will recognize the pasted input and parse out the first and last name as well as validating the e-mail address."
   spec.homepage      = ""
   spec.license       = "MIT"
 
