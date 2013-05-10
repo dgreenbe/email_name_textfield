@@ -4,6 +4,11 @@ Text area entry tool that allows you to paste e-mail names and addresses from co
 mail clients such as Gmail, Yahoo! and Outlook.  This tool will recognize the pasted
 input and parse out the first and last name as well as validating the e-mail address.
 
+## Demo
+
+![](https://dl.dropboxusercontent.com/u/86731380/email_input_demo.gif)
+
+
 ## Requirements
 
 * Rails
