@@ -6,8 +6,7 @@ input and parse out the first and last name as well as validating the e-mail add
 
 ## Demo
 
-![](https://dl.dropboxusercontent.com/u/86731380/email_input_demo.gif)
-
+![](http://f.cl.ly/items/0N1s1V2e0u2T1a2K3q1E/email_input_demo.gif)
 
 ## Requirements
 
