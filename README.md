@@ -1,6 +1,15 @@
 # EmailNameTextfield
 
-TODO: Write a gem description
+Text area entry tool that allows you to paste e-mail names and addresses from common
+mail clients such as Gmail, Yahoo! and Outlook.  This tool will recognize the pasted
+input and parse out the first and last name as well as validating the e-mail address.
+
+## Requirements
+
+* Rails
+* CoffeeScript
+* Backbone.js
+* Underscore.js
 
 ## Installation
 
@@ -12,13 +21,48 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Add this line to your application.js file after the lines that require
+Backbone.js and Underscore.js:
 
-    $ gem install email_name_textfield
+    //= require email_name_textfield
 
 ## Usage
 
-TODO: Write usage instructions here
+Reference this text area by creating a new object:
+
+    myemailnamefield = new EmailNameTextField.EmailInputAreaView(placeholder: "email@address.com")
+
+The placeholder text is simply the text that will appear by default when no e-mail
+addresses are shown.
+
+Now, render this object to your view:
+
+    $("mydiv").html(myemailnamefield.render())
+
+Emails will be immediately validated upon pasting or losing the focus on the text area.
+
+To access the resulting list of emails and names call:
+
+    myemailnamefield.name_data()
+
+Result will be an array of JSON objects in the format of:
+
+    { firstName: "Mary", lastName: "Smith", email: "msmith@example.com" }
+
+## Supported email formats
+
+* Gmail -    "Mary Smith" <msmith@example.com>
+* Yahoo! -   Mary Smith <msmith@example.com>
+* Outlook -  Smith, Mary <msmith@example.com>
+* Hotmail -  Mary Smith(msmith@example.com)
+
+### Other formats
+
+* msmith@example.com
+
+
+
+
 
 ## Contributing
 
