@@ -11,6 +11,7 @@ input and parse out the first and last name as well as validating the e-mail add
 ## Requirements
 
 * Rails
+* JQuery
 * CoffeeScript
 * Backbone.js
 * Underscore.js
@@ -29,6 +30,10 @@ Add this line to your application.js file after the lines that require
 Backbone.js and Underscore.js:
 
     //= require email_name_textfield
+
+Include the css file in your application.css file:
+
+    @import "email_name_textfield";
 
 ## Usage
 

@@ -24,7 +24,6 @@ class @EmailNameTextField.EmailInputAreaView extends Backbone.View
           </textarea>
         </li>
       </ul>
-
      </div>"
 
   reset: =>
